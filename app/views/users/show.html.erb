@@ -1,5 +1,6 @@
-<h1>Thông Tin Người Dùng</h1>
-<p>
-  Tên: <%= @user.name %><br>
-  Email: <%= @user.email %>
-</p>
+<% provide(:title, @user.name) %>
+<h1>
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+    <%= @user.email%>
+</h1>
